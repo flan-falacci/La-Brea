@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.2.1 commit date:2022-07-05, commit time:15:44, hash:a2d59b2dac9e</authoring_tool>
+    </contributor>
+    <created>2022-11-25T13:07:58</created>
+    <modified>2022-11-25T13:07:58</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="pat_treeC-effect">
+      <profile_COMMON>
+        <newparam sid="pat_treeC_png-surface">
+          <surface type="2D">
+            <init_from>pat_treeC_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="pat_treeC_png-sampler">
+          <sampler2D>
+            <source>pat_treeC_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="pat_treeC_png-sampler" texcoord="UV_SINGLE"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="pat_treeC_png" name="pat_treeC_png">
+      <init_from>pat_treeC.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="pat_treeC-material" name="pat_treeC">
+      <instance_effect url="#pat_treeC-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="FP_pat_treeC_M_md-mesh" name="FP_pat_treeC_M.md">
+      <mesh>
+        <source id="FP_pat_treeC_M_md-mesh-positions">
+          <float_array id="FP_pat_treeC_M_md-mesh-positions-array" count="180">-0.01433593 -7.03125e-4 0.4693164 -0.1168555 -0.001406192 0.4491797 -0.1125391 -0.004042923 0.5019531 0.1235742 -0.003828108 0.2766016 0.07347655 0.002949178 0.2038086 0.1366992 -1.5625e-4 0.2070703 0.1477539 -0.05728513 0.2788672 0.1478125 -0.07394528 0.352168 0.194375 -0.09792965 0.3044531 -0.08835935 0.06888669 0.3539453 -0.04376947 0.04601562 0.4233984 -0.129375 0.09408199 0.3905273 -0.0826562 -0.08249998 0.3577148 -0.04806637 -0.05771481 0.4264844 -0.1273828 -0.1164453 0.3952149 0.1368359 0.07767575 0.2846875 0.1480078 0.07408201 0.3499414 0.1882812 0.1063281 0.3013867 0.1159765 -0.1142969 0.3820899 0.09556639 -0.0830664 0.4411914 0.1428906 -0.1357421 0.4301562 -0.03320312 0.07076168 0.2585352 -0.03837889 0.0893945 0.3491016 -0.0737695 0.1295312 0.2604687 -0.01804685 -0.07611328 0.2688867 -0.0176562 -0.0798828 0.3620117 -0.05132812 -0.1284765 0.2770117 0.1234179 0.1389063 0.3844922 0.1093555 0.1046094 0.4394531 0.1435937 0.166289 0.4326562 -0.08121091 0.007519483 0.2590039 -0.06742185 0 0.3568945 -0.1449414 0.009687483 0.2599219 0.1261328 0 0.407207 0.1733203 0.004863262 0.3126367 0.1733203 0.004863262 0.3126367 0.2350781 0.00566405 0.3617383 0.002324163 -0.1489843 0.4426172 0.009921848 -0.101289 0.4769531 8.59375e-4 -0.1699023 0.4920898 0.03546869 0.05087888 0.2455859 0.04759764 0.08355468 0.3334961 0.05050778 0.1197265 0.2207617 -0.02744138 -0.005761682 0.1683203 0.002441406 -0.005761682 0.1672852 0.03054684 9.57031e-4 0.3948047 0.01935541 0 -0.009160101 -0.01935541 0 -0.009160101 -0.01249998 0.01017576 0.1677929 -0.01249998 -0.02435547 0.1677929 0.03054684 9.57031e-4 0.3948047 0 -0.02234375 -0.009160101 0 0.02234375 -0.009160101 0.02619135 -0.1372265 0.3206836 0.02787107 -0.09833979 0.4082617 0.02888667 -0.2071289 0.3547266 0.03384763 0.1380859 0.2961328 0.03734374 0.1163867 0.3901172 0.03384763 0.1380859 0.2961328 0.04312497 0.2117578 0.3249024</float_array>
+          <technique_common>
+            <accessor source="#FP_pat_treeC_M_md-mesh-positions-array" count="60" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="FP_pat_treeC_M_md-mesh-normals">
+          <float_array id="FP_pat_treeC_M_md-mesh-normals-array" count="114">-0.01691961 0.9985413 0.05127394 -0.003220081 0.9998234 -0.01851713 0.04581284 0.9970673 0.06130188 0.05132114 0.9970251 0.05750703 0.5890336 0.7881128 0.1786552 0.5090847 0.8393986 0.1903756 0.4996968 0.8654596 -0.0358138 0.5165717 0.8547731 -0.05016726 0.5980948 -0.8013353 -0.01202237 0.5884773 -0.8085008 -0.004602432 0.5151714 -0.8464179 -0.1348157 0.515945 -0.8459298 -0.1349213 0.7285497 0.6767408 -0.106006 0.7928498 0.6075823 -0.04725593 0.8198786 0.568236 -0.07005155 0.8064779 0.5865414 -0.07458353 0.8419027 -0.5390335 -0.02535063 0.8413517 -0.5398918 -0.02538299 0.8672435 -0.4906943 -0.08430957 0.8401662 -0.5298501 -0.1156708 -0.03494155 -0.9968177 -0.07164925 0.02065634 -0.9966235 -0.07946598 3.61499e-4 -0.9986895 -0.05117726 0.03850829 -0.9987412 -0.03214591 0.9901428 -0.1370996 -0.02865105 0.9871151 -0.1599677 0.003784894 0.9720036 -0.2298713 -0.04866468 0.9710319 -0.234306 -0.04688227 0.001018166 -0.9995675 0.02939188 -0.001134276 -0.9994632 -0.03274559 0 -0.9994735 -0.03244686 -0.9824922 0 0.1863041 -0.9975143 0 -0.07046455 -0.9975143 0 -0.07046455 0.9992669 0.02400535 -0.02982419 0.9995756 -0.02838319 -0.006568312 0.9930051 -0.1014732 -0.06036669 0.9976789 -0.0480867 -0.04821461</float_array>
+          <technique_common>
+            <accessor source="#FP_pat_treeC_M_md-mesh-normals-array" count="38" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="FP_pat_treeC_M_md-mesh-map-0">
+          <float_array id="FP_pat_treeC_M_md-mesh-map-0-array" count="228">1.858154 0.5061035 1.599121 0.5061035 1.793945 1 1.793945 1 1.599121 0.5061035 0.434082 0.5061035 0.1418457 0.5061035 0.213623 1 0.434082 0.5061035 0.434082 0.5061035 0.213623 1 1.793945 1 0.1342773 0.5061035 0.2060546 1 0.4675293 0.5061035 0.4675293 0.5061035 0.2060546 1 1.78833 1 1.867676 0.5061035 1.631592 0.5061035 1.78833 1 1.78833 1 1.631592 0.5061035 0.4675293 0.5061035 0.1362304 0.5061035 0.2192382 1 0.5053711 0.5061035 0.5053711 0.5061035 0.2192382 1 1.795898 1 1.858154 0.5061035 1.588135 0.5061035 1.795898 1 1.795898 1 1.588135 0.5061035 0.5053711 0.5061035 0.1323242 0.5061035 0.2155761 1 0.4194336 0.5061035 0.4194336 0.5061035 0.2155761 1 1.78833 1 1.865723 0.5061035 1.494629 0.5061035 1.78833 1 1.78833 1 1.494629 0.5061035 0.4194336 0.5061035 0.1418457 0.5061035 0.213623 1 0.6091309 0.5061035 0.6091309 0.5061035 0.213623 1 1.793945 1 1.858154 0.5061035 1.623779 0.5061035 1.793945 1 1.793945 1 1.623779 0.5061035 0.6091309 0.5061035 1.865723 0.5061035 1.790283 1 1.435547 0.5061035 1.435547 0.5061035 1.790283 1 0.5258789 0.5061035 1.790283 1 0.2192382 1 0.5258789 0.5061035 0.5258789 0.5061035 0.2192382 1 0.1342773 0.5061035 0.1418457 0.5061035 0.2097167 1 0.4685059 0.5061035 0.4685059 0.5061035 0.2097167 1 1.793945 1 1.858154 0.5061035 1.503662 0.5061035 1.793945 1 1.793945 1 1.503662 0.5061035 0.4685059 0.5061035 0.008544921 6.020508 0.1118164 2.145264 -0.1071777 2.145264 -0.1071777 2.145264 0.1118164 2.145264 -0.1071777 -1.379395 0.1118164 2.145264 0.1135253 -1.379395 -0.1071777 -1.379395 0.008544921 6.020508 0.1118164 2.145264 -0.1071777 2.145264 -0.1071777 2.145264 0.1118164 2.145264 -0.1071777 -1.379395 0.1118164 2.145264 0.1135253 -1.379395 -0.1071777 -1.379395 0.1323242 0.5061035 0.2224121 1 0.6330567 0.5061035 0.6330567 0.5061035 0.2224121 1 1.791504 1 1.863525 0.5061035 1.514648 0.5061035 1.791504 1 0.6330567 0.5061035 1.791504 1 1.514648 0.5061035</float_array>
+          <technique_common>
+            <accessor source="#FP_pat_treeC_M_md-mesh-map-0-array" count="114" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="FP_pat_treeC_M_md-mesh-vertices">
+          <input semantic="POSITION" source="#FP_pat_treeC_M_md-mesh-positions"/>
+        </vertices>
+        <triangles material="pat_treeC-material" count="38">
+          <input semantic="VERTEX" source="#FP_pat_treeC_M_md-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#FP_pat_treeC_M_md-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#FP_pat_treeC_M_md-mesh-map-0" offset="2" set="0"/>
+          <p>2 0 0 0 0 1 1 0 2 1 1 3 0 1 4 3 1 5 5 2 6 4 2 7 3 2 8 3 3 9 4 3 10 1 3 11 8 4 12 6 4 13 7 4 14 7 5 15 6 5 16 9 5 17 11 6 18 10 6 19 9 6 20 9 7 21 10 7 22 7 7 23 14 8 24 12 8 25 13 8 26 13 9 27 12 9 28 15 9 29 17 10 30 16 10 31 15 10 32 15 11 33 16 11 34 13 11 35 20 12 36 18 12 37 19 12 38 19 13 39 18 13 40 21 13 41 23 14 42 22 14 43 21 14 44 21 15 45 22 15 46 19 15 47 26 16 48 24 16 49 25 16 50 25 17 51 24 17 52 27 17 53 29 18 54 28 18 55 27 18 56 27 19 57 28 19 58 25 19 59 32 20 60 30 20 61 31 20 62 31 21 63 30 21 64 33 21 65 30 22 66 34 22 67 33 22 68 33 23 69 35 23 70 36 23 71 39 24 72 37 24 73 38 24 74 38 25 75 37 25 76 40 25 77 42 26 78 41 26 79 40 26 80 40 27 81 41 27 82 38 27 83 45 28 84 43 28 85 44 28 86 44 29 87 43 29 88 46 29 89 43 30 90 47 30 91 46 30 92 50 31 93 48 31 94 49 31 95 49 32 96 48 32 97 51 32 98 48 33 99 52 33 100 51 33 101 55 34 102 53 34 103 54 34 104 54 35 105 53 35 106 56 35 107 59 36 108 57 36 109 58 36 110 54 37 111 56 37 112 57 37 113</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin" name="FP_pat_treeC_M.ao">
+      <skin source="#FP_pat_treeC_M_md-mesh">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0.9999999</bind_shape_matrix>
+        <source id="FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-joints">
+          <Name_array id="FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-joints-array" count="1">FP_pat_treeC_M</Name_array>
+          <technique_common>
+            <accessor source="#FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-bind_poses">
+          <float_array id="FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-bind_poses-array" count="16">0.251468 0 0 0 0 0.251468 0 0 0 0 0.251468 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-weights">
+          <float_array id="FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-weights-array" count="60">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-weights-array" count="60" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-bind_poses"/>
+        </joints>
+        <vertex_weights count="60">
+          <input semantic="JOINT" source="#FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0 21 0 22 0 23 0 24 0 25 0 26 0 27 0 28 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0 46 0 47 0 48 0 49 0 50 0 51 0 52 0 53 0 54 0 55 0 56 0 57 0 58 0 59</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="FP_pat_treeC_M_ao" name="FP_pat_treeC_M.ao" type="NODE">
+        <matrix sid="transform">3.97665 0 0 0 0 3.97665 0 0 0 0 3.97665 0 0 0 0 1</matrix>
+        <node id="FP_pat_treeC_M_ao_FP_pat_treeC_M" name="FP_pat_treeC_M" sid="FP_pat_treeC_M" type="JOINT">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">0.00999999</tip_y>
+              <tip_z sid="tip_z" type="float">0</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="FP_pat_treeC_M_mo" name="FP_pat_treeC_M.mo" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <instance_controller url="#FP_pat_treeC_M_ao_FP_pat_treeC_M_mo-skin">
+            <skeleton>#FP_pat_treeC_M_ao_FP_pat_treeC_M</skeleton>
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="pat_treeC-material" target="#pat_treeC-material">
+                  <bind_vertex_input semantic="UV_SINGLE" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_controller>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
