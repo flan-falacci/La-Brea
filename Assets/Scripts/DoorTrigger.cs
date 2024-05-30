@@ -32,7 +32,7 @@ public class DoorTrigger : MonoBehaviour
             rightAnim.SetBool("opening", true);
 
             Camera.main.clearFlags = CameraClearFlags.Color;
-            Camera.main.backgroundColor = Color.black; 
+            Camera.main.backgroundColor = Color.black;
         }
     }
 

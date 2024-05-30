@@ -6,7 +6,8 @@ public class doortrigger2 : MonoBehaviour
 {
 
     public GameObject outsideZone;
-    public GameObject museum; 
+    public GameObject museum;
+    public GameObject descent; 
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,8 @@ public class doortrigger2 : MonoBehaviour
         {
             outsideZone.SetActive(false);
             museum.SetActive(false);
+            descent.SetActive(true);
+
         }
     }
 }
