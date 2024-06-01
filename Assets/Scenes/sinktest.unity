@@ -189,7 +189,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1d269bfea8033d142929b0ff3d10584a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d269bfea8033d142929b0ff3d10584a, type: 3}
       propertyPath: m_Name
       value: skull2
@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 981abcf273c1a6140905e127ac01a400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraObj: {fileID: 110626354}
 --- !u!1001 &116093992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,7 +373,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 3efd51d7736a0df4ea93a0e151c57575, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 3efd51d7736a0df4ea93a0e151c57575, type: 3}
       propertyPath: m_Name
       value: tusker
@@ -414,7 +415,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -539,7 +540,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: e6e74d7935932c649a0456979b30aac4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: e6e74d7935932c649a0456979b30aac4, type: 3}
       propertyPath: m_Name
       value: monkey
@@ -600,7 +601,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Name
       value: mammoth (2)
@@ -661,7 +662,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 534e420f1b42dd248bc4c9b951498903, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 534e420f1b42dd248bc4c9b951498903, type: 3}
       propertyPath: m_Name
       value: dire_skull
@@ -734,7 +735,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 3efd51d7736a0df4ea93a0e151c57575, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 3efd51d7736a0df4ea93a0e151c57575, type: 3}
       propertyPath: m_Name
       value: tusker (1)
@@ -795,7 +796,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Name
       value: mammoth (1)
@@ -868,7 +869,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: fd8c25d4cca0da24a935524c9d138624, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: fd8c25d4cca0da24a935524c9d138624, type: 3}
       propertyPath: m_Name
       value: saber_skull
@@ -929,7 +930,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Name
       value: mammoth
@@ -1006,7 +1007,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 726892c376a44e246a825c476d4852f4, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: -7511558181221131132, guid: 726892c376a44e246a825c476d4852f4, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
@@ -1071,7 +1072,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Name
       value: mammoth (4)
@@ -1132,7 +1133,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98002874dc26fa440931e093bdf7dcec, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e1782926262f2d4c80287956f122400, type: 2}
     - target: {fileID: 919132149155446097, guid: 7bd0c653a6bfe314f987beb507a94ab0, type: 3}
       propertyPath: m_Name
       value: mammoth (3)
